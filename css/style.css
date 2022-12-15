@@ -45,18 +45,18 @@ body{
 .btn{
     font-size: 14px;
     color: var(--grayish-blue);
+    font-weight: 500;
 }
 
 .notification-list{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: .75rem;
 }
 
 .notif{
     display: flex;
-    background-color: var(--light-grayish-blue-2);
     padding: 1rem;
     gap: .5rem;
     font-size: smaller ;
@@ -82,6 +82,7 @@ img{
     color: var(--very-dark-blue);
     font-weight: 800;
     cursor: pointer;
+    margin-right: 2px;
 }
 .notif:nth-of-type(5)>.content>.p>.content-img{
     height: 40px;
@@ -94,6 +95,7 @@ p>span{
 p>span.unread{
     font-weight: 800;
     color: var(--very-dark-blue);
+    margin-right: 2px;
 }
 p>span.chess{
     color: var(--blue);
@@ -102,6 +104,37 @@ p>span.chess{
     color: var(--grayish-blue);
     font-weight: 500;
 }
+.package{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.package>.msg{
+    border: 1px solid var(--grayish-blue);
+    border-radius: 4px;
+    padding: 1rem 1.5rem 1rem 1rem;
+    line-height: 1.4;
+    color: var(--dark-grayish-blue);
+}
+
+
+.notif.unread
+{
+    background: var(--light-grayish-blue-1);
+    border-radius: 8px;
+}
+.circle.show{
+    margin-left: 2px;
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+.num.off{
+    display: none;
+}
+
 
 
 

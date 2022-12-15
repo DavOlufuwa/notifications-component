@@ -12,7 +12,7 @@
     <div class=" header-section">
       <div class="notification-title">
         Notifications
-        <span>
+        <span class="num">
           3
         </span>
       </div>
@@ -21,7 +21,7 @@
       </div>
     </div>
     <section class="notification-list">
-      <div class="notif">
+      <div class="notif unread">
         <div class="notif-img">
           <img src="./assets/images/avatar-mark-webber.webp" alt="" aria-hidden="true">
         </div>
@@ -29,32 +29,34 @@
           <p>
             <span class="unread">Mark Webber
             </span>reacted to your recent post <span>My first tournament today!</span>
+            <span class="circle show"></span>
           </p>
           <div class="time">
             1m ago
           </div>
         </div>
       </div>
-      <div class="notif">
+      <div class="notif unread">
         <div class="notif-img">
           <img src="./assets/images/avatar-angela-gray.webp" alt="" aria-hidden="true">
         </div>
         <div class="content">
           <p>
-            <span class="unread">Angela Gray</span> followed you
+            <span class="unread">Angela Gray</span> followed you<span class="circle show"></span>
           </p>
           <div class="time">
             5m ago
           </div>
         </div>
       </div>
-      <div class="notif">
+      <div class="notif unread">
         <div class="notif-img">
           <img src="./assets/images/avatar-jacob-thompson.webp" alt="" aria-hidden="true">
         </div>
         <div class="content">
           <p>
-            <span class="unread">Jacob Thompson</span> has joined your group<span class="chess"> Chess Club</span> 
+            <span class="unread">Jacob Thompson</span> has joined your group<span class="chess"> Chess Club</span>
+            <span class="circle show"></span> 
           </p>
           <div class="time">
             1 day ago
@@ -65,17 +67,19 @@
         <div class="notif-img">
           <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
         </div>
-        <div class="content">
-          <p>
-            <span class="unread">Rizky Hasanuddin</span> sent you a private message
-          </p>
-        </div>
-        <div class="time">
-          5 days ago
-        </div>
-        <div class="msg">
-          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-          I'm already having lots of fun and improving my game.
+        <div class="package">
+          <div class="content">
+            <p>
+              <span class="unread">Rizky Hasanuddin</span> sent you a private message
+            </p>
+            <div class="time">
+              5 days ago
+            </div>
+          </div>
+          <div class="msg">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </div>
         </div>
       </div>
       <div class="notif">
@@ -119,7 +123,7 @@
         </div>
         <div class="content">
           <p>
-            <span class="unread">Anna Kim</span> left the group <span class="chess">Chess Club</span>
+            <span class="unread">Anna Kim</span> left the group  <span class="chess">Chess Club</span>
           </p>
           <div class="time">
             2 weeks ago  
@@ -128,5 +132,6 @@
       </div>
     </section>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
