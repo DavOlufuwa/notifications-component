@@ -17,3 +17,13 @@ notifications.forEach(notification=>{
     })
 })
 
+const markAll = document.querySelector(".btn")
+markAll.addEventListener("click",function(){
+    notifications.forEach((notifique)=>{
+        if(notifique.classList.contains("unread")){
+            notifique.classList.remove("unread")
+            notifique.children[1].firstElementChild.lastElementChild.remove()
+        }
+        notifSym.classList.add("off")
+    })
+})

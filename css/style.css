@@ -30,22 +30,29 @@ body{
 }
 .notification-title{
     font-weight: 800;
+    font-size: large;
 }
 
 .notification-title>span{
     background-color: var(--blue);
     color: var(--white);
-    padding:1px 10px;
+    padding:2px 9px;
     text-align: center;
     border-radius: 4px;
     font-weight: 500;
     margin-left: 4px;
+    font-size: smaller;
 }
 
 .btn{
     font-size: 14px;
     color: var(--grayish-blue);
-    font-weight: 500;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--blue);
 }
 
 .notification-list{
@@ -70,12 +77,16 @@ img{
     width: 40px;
 }
 .content{
+    display: flex;
+    flex-direction: column;
     color: var(--dark-grayish-blue);
+    width: 100%;
 }
 .notif:nth-of-type(5)>.content>.p{
-    display: flex;
-    gap: 1rem;
-    
+    /* gap: 1rem; */
+    display: inline-flex;
+    flex: auto;
+    justify-content: space-between;    
 }
 
 .notif:nth-of-type(5)>.content>.p span.unread{
@@ -92,12 +103,23 @@ p>span{
     font-weight: 800;
     cursor: pointer;
 }
+p>span:hover{
+    color:var(--blue);
+}
 p>span.unread{
     font-weight: 800;
     color: var(--very-dark-blue);
     margin-right: 2px;
+    cursor: pointer;
 }
+p>span.unread:hover{
+    color: var(--blue);
+}
+
 p>span.chess{
+    color: var(--light-grayish-blue);
+}
+p>span.chess:hover{
     color: var(--blue);
 }
 .time{
@@ -115,16 +137,22 @@ p>span.chess{
     padding: 1rem 1.5rem 1rem 1rem;
     line-height: 1.4;
     color: var(--dark-grayish-blue);
+    cursor: pointer;
+}
+
+.package>.msg:hover{
+    background-color: var(--light-grayish-blue-1);
+    border: none;
 }
 
 
 .notif.unread
 {
-    background: var(--light-grayish-blue-1);
+    background: var(--very-light-grayish-blue);
     border-radius: 8px;
 }
 .circle.show{
-    margin-left: 2px;
+    margin-left: 4px;
     height: 7px;
     width: 7px;
     background-color: red;
@@ -136,5 +164,21 @@ p>span.chess{
 }
 
 
-
+@media(min-width:650px){
+    body{
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+        padding: 4rem;
+        background-color: var(--very-light-grayish-blue);
+    }
+    
+    .card{
+        background-color: var(--white);
+        padding:2rem;
+        border-radius: 16px;
+        box-shadow:  0px 1px 30px 2px var(--light-grayish-blue-2);
+        max-width: 39rem;
+    }
+}
 
